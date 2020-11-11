@@ -557,7 +557,7 @@ def student_Delete():
         state_entry.insert(0,result[11])
         Phoneno_entry.insert(0,result[12])
 
-    a = messagebox.askquestion("choice", "Do you want to Delete the entered information")
+    a = messagebox.askquestion("choice", "Do you want to delete the entered information")
     if a == "yes":
         cursor.execute("delete from student_data where reference_no= %s" %ref_no)
         mydb.commit()
@@ -1169,7 +1169,7 @@ def window_for_stu_system():
     name = Label(stu, text="LIBRARY MANAGEMENT SYSTEM", font=("lucida grande", "25"), anchor="center")
     name.grid(row=0, column=0)
     # second heading
-    s_name = Label(stu, text="PLATO PUBLIC SCHOOL", font=("lucida grande", "15"), anchor="center")
+    s_name = Label(stu, text="K.V. No.1 Jaipur", font=("lucida grande", "15"), anchor="center")
     s_name.grid()
 
     frame = LabelFrame(stu, padx=50, pady=50)
